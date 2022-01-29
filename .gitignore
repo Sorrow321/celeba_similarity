@@ -1,0 +1,11 @@
+.ipynb_checkpoints
+__pycache__
+.vscode
+voxceleba1
+qdrant_data
+*.wav
+cfg.yaml
+.gitignore
+*.ipynb
+*.ogg
+log.txt
