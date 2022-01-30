@@ -24,7 +24,7 @@ logging.basicConfig(
     format='%(asctime)s %(message)s'
 )
 bot = telebot.TeleBot(API_KEY, parse_mode=None)
-client = QdrantClient(host="localhost", port=6333)
+client = QdrantClient(host="qdrant", port=6333)
 
 
 @bot.message_handler(commands=['start'])

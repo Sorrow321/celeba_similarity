@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  qdrant:
+    image: generall/qdrant
+    ports:
+      - "6333:6333"
+    volumes:
+      - "./qdrant_data:/qdrant/storage" 
+  bot:
+    build: .
+    volumes:
+      - "./voxceleba1:/qdrant_celebrity_bot/voxceleba1"
+      - "./log.txt:/qdrant_celebrity_bot/log.txt"

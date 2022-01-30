@@ -8,11 +8,10 @@ from pathlib import Path
 
 model_name = 'microsoft/unispeech-sat-base-plus-sv'
 dataset_path = Path('voxceleba1')
-COLLECTION_NAME = 'vox_celeba'
 
 # Load the model
 feature_extractor = Wav2Vec2FeatureExtractor.from_pretrained(model_name)
-model = UniSpeechSatForXVector.from_pretrained(model_name).cuda()
+model = UniSpeechSatForXVector.from_pretrained(model_name)
 model.eval()
 target_sampling_rate = feature_extractor.sampling_rate
 
@@ -23,7 +22,7 @@ def get_embedding(input_audio: torch.Tensor) -> torch.Tensor:
         sampling_rate=16000,
         return_tensors="pt"
     )
-    input_values = inputs.input_values.cuda()
+    input_values = inputs.input_values
     with torch.no_grad():
         embedding = model(input_values).embeddings
     embedding = F.normalize(embedding, dim=-1)
