@@ -8,6 +8,7 @@
 - ...
 - ./bot.py
 - ./query.py
+- ./requirements.txt
 - And so on
 3. Create QDrant collection. This step can be omitted if you have already done that or downloaded an existing vector collection for QDrant. To do that from scratch, use the following commands:
 ```
@@ -33,8 +34,9 @@ log_file: log.txt
 ```
 Replace `YOUR_KEY` with the actual key that Telegram @BotFather gave you. For more details, please read some guide about Telegram bots.
 
-5. Run the docker-compose command to build and run all the required containers together:
+5. Create empty `log.txt` file.
+6. Run the docker-compose command to build and run all the required containers together:
 ```
 docker-compose up
 ```
-6. Open your Telegram bot and try it! It should work.
+7. Open your Telegram bot and try it! It should work.
