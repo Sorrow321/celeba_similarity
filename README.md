@@ -1,5 +1,9 @@
 # QDrant Celebrity Voice Similarity
 
+## Medium article
+
+[Click](https://medium.com/@ifedorov/creating-a-deep-learning-application-telling-which-celebrity-your-voice-sounds-like-e28a49117f61)
+
 ## Tutorial
 1. Make sure that you have `docker` and `docker-compose` installed on your computer.
 2. Download [The VoxCeleb1 Dataset](https://www.robots.ox.ac.uk/~vgg/data/voxceleb/vox1.html). Place it in the root repository folder, s.t. your directory tree would like like that: 
