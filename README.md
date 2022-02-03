@@ -44,3 +44,6 @@ Replace `YOUR_KEY` with the actual key that Telegram @BotFather gave you. For mo
 docker-compose up
 ```
 7. Open your Telegram bot and try it! It should work.
+
+## License
+The content of the repository is distributed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license. 
